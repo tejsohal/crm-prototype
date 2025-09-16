@@ -2,6 +2,7 @@ import React from "react";
 import { Search, Bell } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Image from "next/image"
 
 interface TopbarProps {
   onLogout: () => void;
@@ -22,7 +23,12 @@ export function Topbar({ onLogout }: TopbarProps) {
         <Button variant="outline" size="sm" className="rounded-full" onClick={onLogout}>
           Logout
         </Button>
-        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-zinc-600 to-zinc-900" />
+        <Image
+          src="/batman-mask.png"
+          alt="batman"
+          width={32}
+          height={32}
+          className="rounded-full object-cover"/>
       </div>
     </div>
   );
