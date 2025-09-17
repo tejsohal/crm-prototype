@@ -27,7 +27,10 @@ export function FormBuilder({ forms, setForms }: Props) {
 
   const addForm = () => {
     if (!forms.find((f) => f.name === formName)) {
-      setForms([...forms, { name: formName, fields: [] }])
+      setForms([...forms, {
+        name: formName, fields: [],
+        id: ""
+      }])
     }
   }
 
