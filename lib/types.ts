@@ -41,3 +41,15 @@ export interface ReferralForm {
   risk: "Low" | "Medium" | "High";
   riskNotes?: string;
 }
+
+export type CustomForm = {
+  id: string;
+  name: string;
+  fields: CustomField[];
+};
+
+export type CustomField = {
+  id: string;
+  label: string;
+  type: "text" | "number" | "select" | "checkbox";
+};
