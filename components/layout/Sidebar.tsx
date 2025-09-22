@@ -40,7 +40,7 @@ export function Sidebar({ view, setView }: SidebarProps) {
             onClick={() => setView(it.key)}
             className={classNames(
               "w-full flex items-center gap-3 px-3 py-2 rounded-xl text-sm transition",
-              view === it.key ? "bg-zinc-900 text-white shadow" : "hover:bg-zinc-100"
+              view === it.key ? "bg-[#8e51ff] text-white shadow" : "hover:bg-zinc-100"
             )}
           >
             {it.icon}
